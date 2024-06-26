@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:image" content="./assets/logo/logo-no-text.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/logo/logo-no-text.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quin - Travel</title>
+    <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- style css -->
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="bg-primary text-light">
+      <div class="container py-2">
+        <div class="row">
+          <a href="/" class="d-flex align-items-center col-4">
+            <img
+              width="84"
+              class="imge-fluid"
+              src="./assets/logo/logo-white.png"
+              alt=""
+            />
+            <!-- <div class="text-light pt-2 fw-bold px-2">Travel</div> -->
+          </a>
+
+          <nav
+            class="col-8 d-flex justify-content-end text-light nav-laptop d-none d-md-flex"
+          >
+            <a
+              href=""
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1"
+            >
+              <div class="fw-medium">VND</div>
+              <img
+                class="ms-2"
+                width="24"
+                src="./assets/icons//vietnam.png"
+                alt=""
+              />
+            </a>
+            <a
+              href=""
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1 d-flex align-items-center gap-2"
+            >
+              <div class="fw-medium">Liên hệ</div>
+              <i class="fa-regular fa-circle-question"></i>
+            </a>
+            <a
+              href=""
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1 me-2 d-flex align-items-center gap-2"
+            >
+              <div class="fw-medium">Tin tức</div>
+              <i class="fa-solid fa-satellite-dish"></i>
+            </a>
+            <div class="d-flex gap-2">
+              <a
+                href="register.html"
+                class="btn btn-outline-light btn-sm d-flex align-items-center text-primary fw-bolder rounded-2 bg-light"
+                >Đăng ký</a
+              >
+              <a
+                href="login.html"
+                class="btn btn-outline-light btn-sm d-flex align-items-center text-primary rounded-2 fw-bolder bg-light"
+                >Đăng nhập</a
+              >
+            </div>
+          </nav>
+          <nav
+            class="col-8 d-flex justify-content-end text-light nav-mobile hidden d-block d-md-none"
+          >
+            <div
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1 d-flex align-items-center gap-2"
+            >
+              <i class="fa-regular fa-circle-user fs-3"></i>
+            </div>
+            <div
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1 d-flex align-items-center gap-2"
+            >
+              <i class="fa-solid fa-bars fs-3"></i>
+            </div>
+          </nav>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12 text-white d-flex gap-2">
+            <a
+              href="#"
+              class="border border-primary text-light fs-7 d-flex align-items-center gap-2 bg-hover-1 w-fit p-2 rounded-5 px-3"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Địa điểm tham quan</span>
+            </a>
+
+            <div class="d-none gap-2 d-md-flex">
+              <a
+                href="#"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-solid fa-plane"></i>
+                <span>Chuyến bay</span>
+              </a>
+
+              <a
+                href="#"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-solid fa-hotel"></i>
+                <span>Khách sạn</span>
+              </a>
+
+              <a
+                href="#"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-solid fa-car"></i>
+                <span>Thuê xe</span>
+              </a>
+
+              <a
+                href="#"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+                <span>Khuyến mãi</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header mobile start-->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Khác</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <label for="" class="fw-bold">Ngôn ngữ</label>
+          <div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+              <span>Tiếng việt</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="" class="fw-bold">Hộ trợ</label>
+          <div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <span>Liên hệ</span>
+            </div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-regular fa-circle-question"></i>
+              </div>
+              <span>Hỏi đáp</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="" class="fw-bold">Chức năng</label>
+          <div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-plane"></i>
+              </div>
+              <span>Chuyến bay</span>
+            </div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <span>Khách sạn</span>
+            </div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <span>Thuê xe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 border-top border-2 pt-4">
+          <button class="btn btn-primary w-100">Đăng nhập</button>
+          <button class="btn btn-outline-primary w-100 my-3">Đăng kí</button>
+        </div>
+      </div>
+    </div>
+    <!-- header mobile end-->
+
+    <!-- main -->
+    <main class="container">
+      <div class="pt-3">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Nước ngoài</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Châu Âu</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-md-3 h-fit  fs-7 pe-4">
+          <div class=" border rounded-2 p-3">
+            <div class="fw-bold border-bottom pb-2 mb-2 fs-6 text-primary">
+              Chọn lọc theo
+            </div>
+            <div class="my-2">
+              <label for="" class="fw-bold">Loại hình tour</label>
+              <select name="" class="form-control" id="">
+                <option value="">--Tất cả--</option>
+                <option value="">Tour trọn gói</option>
+                <option value="">Tour gia đình</option>
+              </select>
+            </div>
+            <div class="my-2">
+              <label for="" class="fw-bold">Điểm đi</label>
+              <select name="" class="form-control" id="">
+                <option value="">--Tất cả--</option>
+                <option value="">HCM</option>
+                <option value="">Hà Nội</option>
+              </select>
+            </div>
+            <div class="my-2">
+              <label for="" class="fw-bold">Điểm đến</label>
+              <select name="" class="form-control" id="">
+                <option value="">--Tất cả--</option>
+                <option value="">HCM</option>
+                <option value="">Hà Nội</option>
+              </select>
+            </div>
+            <div class="my-2">
+              <label for="" class="fw-bold">Số ngày</label>
+              <div class="row">
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray fs-7 text-gray w-100"
+                    >1-3 ngày</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >4-7 ngày</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >8-14 ngày</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >trên 14 ngày</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <label for="" class="fw-bold">Ngày đi</label>
+              <input type="date" class="form-control" />
+            </div>
+            <div class="my-2">
+              <label for="" class="fw-bold">Số người</label>
+              <div class="row">
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >1 người</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+  
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >2 người</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >3-5 người</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >5+ người</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+              </div>
+            </div>
+  
+            <div class="my-2">
+              <label for="" class="fw-bold">Ngân sách của bạn (mỗi đêm)</label>
+              <input
+                type="range"
+                class="form-range"
+                min="0"
+                max="5"
+                step="0.5"
+                id="customRange3"
+              />
+              <div>
+                <div class="d-flex gap-2 align-items-center">
+                  <span class="text-gray fs-7">0 đ</span>
+                  <span>-</span>
+                  <span class="text-gray fs-7">20.000.000 đ</span>
+    
+                  </div>
+              </div>
+            </div>
+  
+            <div class="my-2">
+              <label for="" class="fw-bold">Dòng tour</label>
+              <div class="row">
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >Cao cấp</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+  
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >Tiêu chuẩn</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >Tiết kiệm</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+                <div class="col-6">
+                  <label
+                    for="date1"
+                    class="btn btn-outline-primary border-gray text-gray w-100 fs-7"
+                    >Giá tốt</label
+                  >
+                  <input id="" type="radio" hidden />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="d-flex justify-content-between align-items-center text-gray">
+            <div class="fs-7">Tìm thấy <strong class="text-primary fs-6">60</strong> tours cho Quý Khách.</div>
+            <div class="d-flex align-items-center gap-2 fs-7">
+              <span>Sắp xếp theo</span>
+              <div>
+                <select class="form-control" name="" id="">
+                  <option value="">--Chọn--</option>
+                  <option value="">Theo ngày</option>
+                  <option value="">Theo giá</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-4">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card card-hover position-relative">
+                  <div class="position-absolute start-0 top-0 p-2">
+                    <div
+                      class="bg-warning px-2 py-1 rounded-2 text-white fw-bold"
+                    >
+                      Sale
+                    </div>
+                  </div>
+                  <div class="" style="height: 260px">
+                    <img
+                      src="https://media.travel.com.vn/LastMinute/lm_240625050617_329382_BKK%20shopping%20mall.jpg"
+                      class="card-img-top h-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <span class="fs-7">27/6/2024 - 5 ngày</span>
+                    <h5 class="card-title text-primary fw-bold mt-1 card-name">
+                      <a href="#"
+                        >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
+                        Show Alcazar và Buffet tại BaiYoke Sky)</a
+                      >
+                    </h5>
+                    <span class="card-text fs-7"
+                      >Nơi khởi hành: TP. Hồ Chí Minh</span
+                    >
+                    <div class="mt-2"><del>Giá: 4.990.000 đ</del></div>
+                    <div class="d-flex text-warning justify-content-between">
+                      <span class="fw-bold fs-5">Còn: 3.999.000 đ</span>
+                      <div
+                        class="bg-warning text-light px-2 py-1 fs-7 rounded-4"
+                      >
+                        9% GIẢM
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 my-2">
+                      <a href="#" class="btn btn-danger w-100">Đặt ngay</a>
+                      <a href="#" class="btn btn-outline-primary"
+                        >Xem chi tiết</a
+                      >
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                      <a href="#" class="fs-7 fw-bold text-primary">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Thêm vào so sánh</span>
+                      </a>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="fs-7 fw-bold text-decoration-underline">
+                          Số chỗ còn
+                        </div>
+                        <span class="text-danger fw-bold fs-5">2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card card-hover">
+                  <div class="" style="height: 260px">
+                    <img
+                      src="https://media.travel.com.vn/LastMinute/lm_240625050617_329382_BKK%20shopping%20mall.jpg"
+                      class="card-img-top h-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <span class="fs-7">27/6/2024 - 5 ngày</span>
+                    <h5 class="card-title text-primary fw-bold mt-1 card-name">
+                      <a href="#"
+                        >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
+                        Show Alcazar và Buffet tại BaiYoke Sky)</a
+                      >
+                    </h5>
+                    <span class="card-text fs-7"
+                      >Nơi khởi hành: TP. Hồ Chí Minh</span
+                    >
+                    <div class="mt-2"><del>Giá: 4.990.000 đ</del></div>
+                    <div class="d-flex text-warning justify-content-between">
+                      <span class="fw-bold fs-5">Còn: 3.999.000 đ</span>
+                      <div
+                        class="bg-warning text-light px-2 py-1 fs-7 rounded-4"
+                      >
+                        9% GIẢM
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 my-2">
+                      <a href="#" class="btn btn-danger w-100">Đặt ngay</a>
+                      <a href="#" class="btn btn-outline-primary"
+                        >Xem chi tiết</a
+                      >
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                      <a href="#" class="fs-7 fw-bold text-primary">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Thêm vào so sánh</span>
+                      </a>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="fs-7 fw-bold text-decoration-underline">
+                          Số chỗ còn
+                        </div>
+                        <span class="text-danger fw-bold fs-5">2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card card-hover">
+                  <div class="" style="height: 260px">
+                    <img
+                      src="https://media.travel.com.vn/LastMinute/lm_240625050617_329382_BKK%20shopping%20mall.jpg"
+                      class="card-img-top h-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <span class="fs-7">27/6/2024 - 5 ngày</span>
+                    <h5 class="card-title text-primary fw-bold mt-1 card-name">
+                      <a href="#"
+                        >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
+                        Show Alcazar và Buffet tại BaiYoke Sky)</a
+                      >
+                    </h5>
+                    <span class="card-text fs-7"
+                      >Nơi khởi hành: TP. Hồ Chí Minh</span
+                    >
+                    <div class="mt-2"><del>Giá: 4.990.000 đ</del></div>
+                    <div class="d-flex text-warning justify-content-between">
+                      <span class="fw-bold fs-5">Còn: 3.999.000 đ</span>
+                      <div
+                        class="bg-warning text-light px-2 py-1 fs-7 rounded-4"
+                      >
+                        9% GIẢM
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 my-2">
+                      <a href="#" class="btn btn-danger w-100">Đặt ngay</a>
+                      <a href="#" class="btn btn-outline-primary"
+                        >Xem chi tiết</a
+                      >
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                      <a href="#" class="fs-7 fw-bold text-primary">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Thêm vào so sánh</span>
+                      </a>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="fs-7 fw-bold text-decoration-underline">
+                          Số chỗ còn
+                        </div>
+                        <span class="text-danger fw-bold fs-5">2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card card-hover position-relative">
+                  <div class="position-absolute start-0 top-0 p-2">
+                    <div
+                      class="bg-warning px-2 py-1 rounded-2 text-white fw-bold"
+                    >
+                      Sale
+                    </div>
+                  </div>
+                  <div class="" style="height: 260px">
+                    <img
+                      src="https://media.travel.com.vn/LastMinute/lm_240625050617_329382_BKK%20shopping%20mall.jpg"
+                      class="card-img-top h-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <span class="fs-7">27/6/2024 - 5 ngày</span>
+                    <h5 class="card-title text-primary fw-bold mt-1 card-name">
+                      <a href="#"
+                        >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
+                        Show Alcazar và Buffet tại BaiYoke Sky)</a
+                      >
+                    </h5>
+                    <span class="card-text fs-7"
+                      >Nơi khởi hành: TP. Hồ Chí Minh</span
+                    >
+                    <div class="mt-2"><del>Giá: 4.990.000 đ</del></div>
+                    <div class="d-flex text-warning justify-content-between">
+                      <span class="fw-bold fs-5">Còn: 3.999.000 đ</span>
+                      <div
+                        class="bg-warning text-light px-2 py-1 fs-7 rounded-4"
+                      >
+                        9% GIẢM
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 my-2">
+                      <a href="#" class="btn btn-danger w-100">Đặt ngay</a>
+                      <a href="#" class="btn btn-outline-primary"
+                        >Xem chi tiết</a
+                      >
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                      <a href="#" class="fs-7 fw-bold text-primary">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Thêm vào so sánh</span>
+                      </a>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="fs-7 fw-bold text-decoration-underline">
+                          Số chỗ còn
+                        </div>
+                        <span class="text-danger fw-bold fs-5">2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card card-hover">
+                  <div class="" style="height: 260px">
+                    <img
+                      src="https://media.travel.com.vn/LastMinute/lm_240625050617_329382_BKK%20shopping%20mall.jpg"
+                      class="card-img-top h-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <span class="fs-7">27/6/2024 - 5 ngày</span>
+                    <h5 class="card-title text-primary fw-bold mt-1 card-name">
+                      <a href="#"
+                        >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
+                        Show Alcazar và Buffet tại BaiYoke Sky)</a
+                      >
+                    </h5>
+                    <span class="card-text fs-7"
+                      >Nơi khởi hành: TP. Hồ Chí Minh</span
+                    >
+                    <div class="mt-2"><del>Giá: 4.990.000 đ</del></div>
+                    <div class="d-flex text-warning justify-content-between">
+                      <span class="fw-bold fs-5">Còn: 3.999.000 đ</span>
+                      <div
+                        class="bg-warning text-light px-2 py-1 fs-7 rounded-4"
+                      >
+                        9% GIẢM
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 my-2">
+                      <a href="#" class="btn btn-danger w-100">Đặt ngay</a>
+                      <a href="#" class="btn btn-outline-primary"
+                        >Xem chi tiết</a
+                      >
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                      <a href="#" class="fs-7 fw-bold text-primary">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Thêm vào so sánh</span>
+                      </a>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="fs-7 fw-bold text-decoration-underline">
+                          Số chỗ còn
+                        </div>
+                        <span class="text-danger fw-bold fs-5">2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card card-hover">
+                  <div class="" style="height: 260px">
+                    <img
+                      src="https://media.travel.com.vn/LastMinute/lm_240625050617_329382_BKK%20shopping%20mall.jpg"
+                      class="card-img-top h-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <span class="fs-7">27/6/2024 - 5 ngày</span>
+                    <h5 class="card-title text-primary fw-bold mt-1 card-name">
+                      <a href="#"
+                        >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
+                        Show Alcazar và Buffet tại BaiYoke Sky)</a
+                      >
+                    </h5>
+                    <span class="card-text fs-7"
+                      >Nơi khởi hành: TP. Hồ Chí Minh</span
+                    >
+                    <div class="mt-2"><del>Giá: 4.990.000 đ</del></div>
+                    <div class="d-flex text-warning justify-content-between">
+                      <span class="fw-bold fs-5">Còn: 3.999.000 đ</span>
+                      <div
+                        class="bg-warning text-light px-2 py-1 fs-7 rounded-4"
+                      >
+                        9% GIẢM
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 my-2">
+                      <a href="#" class="btn btn-danger w-100">Đặt ngay</a>
+                      <a href="#" class="btn btn-outline-primary"
+                        >Xem chi tiết</a
+                      >
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                      <a href="#" class="fs-7 fw-bold text-primary">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Thêm vào so sánh</span>
+                      </a>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="fs-7 fw-bold text-decoration-underline">
+                          Số chỗ còn
+                        </div>
+                        <span class="text-danger fw-bold fs-5">2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center pt-4">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="mt-5 pt-5 border-top border-3 border-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="fw-bold text-primary fs-5">Thông tin liên hệ</div>
+            <div class="mt-4 text-gray">
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <i class="fa-solid fa-headset"></i>
+                <span class="fs-7">0358723520 / Liên hệ 24/7</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="fs-7">Cv.Quang Trung, Q.12, HCM</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="fs-7">quynh232000@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="fw-bold text-primary fs-5">
+              Chính sách của QuinTravel
+            </div>
+            <div class="mt-4 text-gray">
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Phương thức thanh toán</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Chính sách giao hàng</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Chính sách đổi trả</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Điều khoản mua bán</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="fw-bold text-primary fs-5">Về chúng tôi</div>
+            <div class="mt-4 text-gray">
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Câu chuyện của Quin</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Tin tức</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Tuyển dụng</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Chương trình flash sale</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-sm-2">
+            <div class="fw-bold text-primary fs-5">Theo dõi</div>
+            <div class="mt-4 text-gray">
+              <a
+                href="https://facebook.com/quynh232000"
+                class="d-flex text-gray gap-2 align-items-center mb-2"
+              >
+                <i class="fa-brands fa-facebook"></i>
+                <span class="fs-7">QuinTravel</span>
+              </a>
+              <a
+                href="https://mr-quynh.com"
+                class="d-flex text-gray gap-2 align-items-center mb-2"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="fs-7">Tiktok: QuinTravel</span>
+              </a>
+              <a
+                href="https://mr-quynh.com"
+                class="d-flex text-gray gap-2 align-items-center mb-2"
+              >
+                <i class="fa-brands fa-youtube"></i>
+                <span class="fs-7">Youtube: QuinTravel</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-2 text-gray mt-5 border border-top">
+        Copyright © 2024 Mr Quynh
+      </div>
+    </footer>
+    <!-- script -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        direction: "horizontal",
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
+
+      var swiper = new Swiper(".swiper-uudai", {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
+        // slidesPerGroup: 2,
+        loopFillGroupWithBlank: true,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          840: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+        },
+      });
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

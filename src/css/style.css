@@ -1,0 +1,152 @@
+:root {
+  --primary: #0080ff !important;
+  --bg-color:#f9f9f9;
+  /* --primary: #07a5c5 !important; */
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&display=swap");
+
+/* General */
+* {
+  box-sizing: inherit;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fefefe;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px !important;
+  color: rgba(22, 21, 21, 0.85);
+  letter-spacing: 0.5px;
+}
+
+.bg-bg{
+  background-color: var(--bg-color) !important;
+}
+/* custom */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+.text-primary {
+  color: var(--primary) !important;
+}
+.border-primary {
+  border-color: var(--primary) !important;
+}
+.bg-primary:hover {
+  background-color: var(--primary) !important;
+}
+a {
+  text-decoration: none !important;
+  /* color: rgb(15, 15, 15) !important; */
+}
+*:hover {
+  transition: 0.3s ease;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.fw-bolder {
+  font-weight: bolder;
+}
+.fw-medium {
+  font-weight:600;
+}
+.gap-1 {
+  gap: 4px;
+}
+.gap-2 {
+  gap: 8px;
+}
+.gap-3 {
+  gap: 12px;
+}
+.gap-4 {
+  gap: 20px;
+}
+.fs-7 {
+  font-size: 14px;
+}
+.fs-sm {
+  font-size: 10px;
+}
+.text-gray{
+  color: gray;
+}
+.border-gray{
+  border-color: gray;
+}
+.bg-hover-1 {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.hover-bg-hover-1:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.w-fit {
+  width: fit-content;
+}
+.h-fit {
+  height: fit-content;
+}
+.bg-green-1 {
+  background-color: #00a99d8f;
+}
+.p-0{
+  padding: 2px;
+}
+
+
+
+/* custom */
+.card-hover:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-3px);
+}
+.card-name{
+  /* line-height: 1.8rem; */
+  /* margin: 10px 10px 6px; */
+  /* height: 36px; */
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+
+/* media */
+@media screen and (max-width: 768px) {
+  .banner-wrapper{
+    position:relative !important;
+  }
+  .banner-slider{
+    position: absolute;
+    top: -250px !important;
+  }
+  .h-filter{
+    margin-top: -150px;
+  }
+  .form-control.w-fit,.btn-search{
+    width: 100%;
+  }
+ 
+}
+@media screen and (max-width: 520px) {
+  .h-filter{
+    margin-top: 0px;
+  }
+}
