@@ -1,6 +1,7 @@
 :root {
   --primary: #0080ff !important;
-  --bg-color:#f9f9f9;
+  --primary1: #03417e !important;
+  --bg-color: #f9f9f9;
   /* --primary: #07a5c5 !important; */
 }
 
@@ -21,7 +22,9 @@ html {
   height: 100%;
   width: 100%;
 }
-
+.text-primary-1 {
+  color: var(--primary1);
+}
 body {
   background-color: #fefefe;
   font-family: "Roboto", sans-serif;
@@ -30,7 +33,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-.bg-bg{
+.bg-bg {
   background-color: var(--bg-color) !important;
 }
 /* custom */
@@ -64,7 +67,7 @@ a {
   font-weight: bolder;
 }
 .fw-medium {
-  font-weight:600;
+  font-weight: 600;
 }
 .gap-1 {
   gap: 4px;
@@ -84,10 +87,10 @@ a {
 .fs-sm {
   font-size: 10px;
 }
-.text-gray{
+.text-gray {
   color: gray;
 }
-.border-gray{
+.border-gray {
   border-color: gray;
 }
 .bg-hover-1 {
@@ -105,18 +108,19 @@ a {
 .bg-green-1 {
   background-color: #00a99d8f;
 }
-.p-0{
+.p-0 {
   padding: 2px;
 }
-
-
+.flex-1 {
+  flex: 1;
+}
 
 /* custom */
 .card-hover:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   transform: translateY(-3px);
 }
-.card-name{
+.card-name {
   /* line-height: 1.8rem; */
   /* margin: 10px 10px 6px; */
   /* height: 36px; */
@@ -126,27 +130,66 @@ a {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
+.great {
+  position: relative;
+  border-bottom-left-radius: 0 !important;
+}
+.great::before {
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fdc432;
+  content: "";
+  display: block;
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  z-index: 1;
+}
 
-
+.border-dashed-start {
+  border-left: 1px dashed var(--primary);
+  position: relative;
+}
+.border-dashed-start::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  top: -1px;
+  left: -4px;
+  border-radius: 50%;
+}
+.border-dashed-start::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  bottom: -1px;
+  left: -5px;
+  border-radius: 50%;
+}
 /* media */
 @media screen and (max-width: 768px) {
-  .banner-wrapper{
-    position:relative !important;
+  .banner-wrapper {
+    position: relative !important;
   }
-  .banner-slider{
+  .banner-slider {
     position: absolute;
     top: -250px !important;
   }
-  .h-filter{
+  .h-filter {
     margin-top: -150px;
   }
-  .form-control.w-fit,.btn-search{
+  .form-control.w-fit,
+  .btn-search {
     width: 100%;
   }
- 
 }
 @media screen and (max-width: 520px) {
-  .h-filter{
+  .h-filter {
     margin-top: 0px;
   }
 }
