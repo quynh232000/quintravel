@@ -43,7 +43,9 @@
   </head>
   <body>
     <!-- header -->
-    <header class="bg-primary text-light">
+    <header
+      class="bg-primary text-light position-fixed z-2 top-0 start-0 end-0 shadow-sm"
+    >
       <div class="container py-2">
         <div class="row">
           <a href="/" class="d-flex align-items-center col-4">
@@ -117,10 +119,10 @@
           </nav>
         </div>
 
-        <div class="row mt-3">
-          <div class="col-12 text-white d-flex gap-2">
+        <div class="row mt-md-0 mt-2">
+          <div class="col-12 text-white d-flex gap-2 justify-content-md-center">
             <a
-              href="#"
+              href="./collection.html"
               class="border border-primary text-light fs-7 d-flex align-items-center gap-2 bg-hover-1 w-fit p-2 rounded-5 px-3"
             >
               <i class="fa-solid fa-location-dot"></i>
@@ -129,36 +131,36 @@
 
             <div class="d-none gap-2 d-md-flex">
               <a
-              href="#"
-              class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
-            >
-              <i class="fa-solid fa-plane"></i>
-              <span>Chuyến bay</span>
-            </a>
+                href="#"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-solid fa-plane"></i>
+                <span>Chuyến bay</span>
+              </a>
 
-            <a
-              href="#"
-              class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
-            >
-              <i class="fa-solid fa-hotel"></i>
-              <span>Khách sạn</span>
-            </a>
+              <a
+                href="./collection.html"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-solid fa-hotel"></i>
+                <span>Khách sạn</span>
+              </a>
 
-            <a
-              href="#"
-              class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
-            >
-              <i class="fa-solid fa-car"></i>
-              <span>Thuê xe</span>
-            </a>
+              <a
+                href="./collection.html"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-solid fa-car"></i>
+                <span>Thuê xe</span>
+              </a>
 
-            <a
-              href="#"
-              class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
-            >
-              <i class="fa-regular fa-bookmark"></i>
-              <span>Khuyến mãi</span>
-            </a>
+              <a
+                href="./collection.html"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+                <span>Khuyến mãi</span>
+              </a>
             </div>
           </div>
         </div>
@@ -174,9 +176,7 @@
       aria-labelledby="offcanvasWithBothOptionsLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-          Khác
-        </h5>
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Khác</h5>
         <button
           type="button"
           class="btn-close"
@@ -196,7 +196,7 @@
             </div>
           </div>
         </div>
-        
+
         <div>
           <label for="" class="fw-bold">Hộ trợ</label>
           <div>
@@ -238,7 +238,7 @@
           </div>
         </div>
 
-        <div class="mt-4 border-top border-2  pt-4">
+        <div class="mt-4 border-top border-2 pt-4">
           <button class="btn btn-primary w-100">Đăng nhập</button>
           <button class="btn btn-outline-primary w-100 my-3">Đăng kí</button>
         </div>
@@ -246,169 +246,171 @@
     </div>
     <!-- header mobile end-->
 
-    <!-- banner -->
-    <div class="banner-home position-relative banner-home">
-      <img
-        src="./assets/images/slider.jpg"
-        class="object-fit-cover w-100"
-        alt=""
-        
-      />
-      <div class="banner-wrapper position-absolute top-0 start-0 end-0 bottom-0">
-        <div class="container d-flex flex-column justify-content-between h-100">
+    <!-- main -->
+    <main class="pb-4" style="padding-top: 90px">
+      <!-- banner -->
+      <div class="banner-home position-relative banner-home">
+        <img
+          src="./assets/images/slider.jpg"
+          class="object-fit-cover w-100"
+          alt=""
+        />
+        <div
+          class="banner-wrapper position-absolute top-0 start-0 end-0 bottom-0"
+        >
           <div
-            class="swiper-container position-relative overflow-hidden mt-md-5 pt-1 flex-1 pt-1 banner-slider d-none d-md-block"
-            
+            class="container d-flex flex-column justify-content-between h-100"
           >
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide active text-light d-flex flex-column align-items-start gap-2"
-              >
-                <div class="bg-green-1 bg-warning w-fit p-md-2 pd-0 fs-3">
-                  Chào mừng đến mới
-                </div>
-                <div
-                  class="bg-green-1 bg-warning w-fit p-md-2 pd-0 fs-1 text-uppercase"
-                  style="font-size: 64px"
-                >
-                  Quin Tralvel
-                </div>
-                <span class="bg-green-1 bg-warning w-fit p-md-2 pd-0"
-                  >Nơi bạn có thể tìm được những địa điểm du lịch lí tưởng, độc
-                  đáo</span
-                >
-              </div>
-
-              <div
-                class="swiper-slide active text-light d-flex flex-column align-items-start gap-2"
-              >
-                <div class="bg-green-1 bg-warning w-fit p-md-2 pd-0  fs-3">
-                  Chào mừng đến mới
-                </div>
-                <div
-                  class="bg-green-1 bg-warning w-fit p-md-2 pd-0  fs-1 text-uppercase"
-                  style="font-size: 64px"
-                >
-                  Quin Tralvel
-                </div>
-                <span class="bg-green-1 bg-warning w-fit p-md-2 pd-0 "
-                  >Nơi bạn có thể tìm được những địa điểm du lịch lí tưởng, độc
-                  đáo</span
-                >
-              </div>
-
-              <div
-                class="swiper-slide active text-light d-flex flex-column align-items-start gap-2"
-              >
-                <div class="bg-green-1 bg-warning w-fit p-md-2 pd-0  fs-3">
-                  Chào mừng đến mới
-                </div>
-                <div
-                  class="bg-green-1 bg-warning w-fit p-md-2 pd-0  fs-1 text-uppercase"
-                  style="font-size: 64px"
-                >
-                  Quin Tralvel
-                </div>
-                <span class="bg-green-1 bg-warning w-fit p-md-2 pd-0 "
-                  >Nơi bạn có thể tìm được những địa điểm du lịch lí tưởng, độc
-                  đáo</span
-                >
-              </div>
-
-              <!-- Add more slides as needed -->
-            </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination bottom-0"></div> -->
-            <!-- Add Navigation -->
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
-          </div>
-          <!-- filter -->
-          <div class="w-100 h-filter">
-            <div class="d-flex">
-              <div
-                class="d-flex align-items-center gap-3 text-primary fw-bold bg-light py-2 px-3"
-              >
-                <i class="fa-solid fa-location-dot"></i>
-                <div>Địa điểm</div>
-              </div>
-              <a
-                href="#"
-                class="d-flex border-start border-info align-items-center gap-3 text-light fw-medium bg-primary py-2 px-3"
-              >
-                <i class="fa-solid fa-plane"></i>
-                <div>Chuyến bay</div>
-              </a>
-              <a
-                href="#"
-                class="border-start border-info d-flex align-items-center gap-3 text-light fw-medium bg-primary py-2 px-3"
-              >
-                <i class="fa-solid fa-hotel"></i>
-                <div>Khách sạn</div>
-              </a>
-              <a
-                href="#"
-                class="d-flex border-start border-info align-items-center gap-3 text-light fw-medium bg-primary py-2 px-3"
-              >
-                <i class="fa-solid fa-car"></i>
-                <div>Thuê xe</div>
-              </a>
-            </div>
             <div
-              class="bg-light border-bottom border-primary border-3 p-4 d-md-flex d-block gap-4 w-100"
+              class="swiper-container position-relative overflow-hidden mt-md-5 pt-1 flex-1 pt-1 banner-slider d-none d-md-block"
             >
-              <div>
-                <label for="" class="fw-bold text-secondary">Loại:</label>
-                <div class="">
-                  <select class="form-control w-fit" name="" id="">
-                    <option value="">--Loại tour--</option>
-                    <option value="">Trong nước</option>
-                    <option value="">Ngoài nước</option>
-                  </select>
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide active text-light d-flex flex-column align-items-start gap-2"
+                >
+                  <div class="bg-green-1 bg-warning w-fit p-md-2 pd-0 fs-3">
+                    Chào mừng đến mới
+                  </div>
+                  <div
+                    class="bg-green-1 bg-warning w-fit p-md-2 pd-0 fs-1 text-uppercase"
+                    style="font-size: 64px"
+                  >
+                    Quin Tralvel
+                  </div>
+                  <span class="bg-green-1 bg-warning w-fit p-md-2 pd-0"
+                    >Nơi bạn có thể tìm được những địa điểm du lịch lí tưởng,
+                    độc đáo</span
+                  >
                 </div>
-              </div>
 
-              <div>
-                <label for="" class="fw-bold text-secondary">Điểm đi:</label>
-                <div class="">
-                  <select class="form-control w-fit" name="" id="">
-                    <option value="">--Nơi khởi hành--</option>
-                    <option value="">Trong nước</option>
-                    <option value="">Ngoài nước</option>
-                  </select>
+                <div
+                  class="swiper-slide active text-light d-flex flex-column align-items-start gap-2"
+                >
+                  <div class="bg-green-1 bg-warning w-fit p-md-2 pd-0 fs-3">
+                    Chào mừng đến mới
+                  </div>
+                  <div
+                    class="bg-green-1 bg-warning w-fit p-md-2 pd-0 fs-1 text-uppercase"
+                    style="font-size: 64px"
+                  >
+                    Quin Tralvel
+                  </div>
+                  <span class="bg-green-1 bg-warning w-fit p-md-2 pd-0"
+                    >Nơi bạn có thể tìm được những địa điểm du lịch lí tưởng,
+                    độc đáo</span
+                  >
                 </div>
-              </div>
 
-              <div>
-                <label for="" class="fw-bold text-secondary">Điểm đến:</label>
-                <div class="">
-                  <select class="form-control w-fit" name="" id="">
-                    <option value="">--Địa điểm đến--</option>
-                    <option value="">Trong nước</option>
-                    <option value="">Ngoài nước</option>
-                  </select>
+                <div
+                  class="swiper-slide active text-light d-flex flex-column align-items-start gap-2"
+                >
+                  <div class="bg-green-1 bg-warning w-fit p-md-2 pd-0 fs-3">
+                    Chào mừng đến mới
+                  </div>
+                  <div
+                    class="bg-green-1 bg-warning w-fit p-md-2 pd-0 fs-1 text-uppercase"
+                    style="font-size: 64px"
+                  >
+                    Quin Tralvel
+                  </div>
+                  <span class="bg-green-1 bg-warning w-fit p-md-2 pd-0"
+                    >Nơi bạn có thể tìm được những địa điểm du lịch lí tưởng,
+                    độc đáo</span
+                  >
                 </div>
+
+                <!-- Add more slides as needed -->
               </div>
-              <div>
-                <label for="" class="fw-bold text-secondary">Ngày đi:</label>
-                <div class="">
-                  <input type="date" class="form-control w-fit" />
+              <!-- Add Pagination -->
+              <!-- <div class="swiper-pagination bottom-0"></div> -->
+              <!-- Add Navigation -->
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+            </div>
+            <!-- filter -->
+            <div class="w-100 h-filter">
+              <div class="d-flex">
+                <div
+                  class="d-flex align-items-center gap-2 gap-sm-3 text-primary fw-bold bg-light py-sm-2 px-sm-3 py-1 px-2"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>Địa điểm</div>
                 </div>
+                <a
+                  href="#"
+                  class="d-flex border-start border-info align-items-center gap-sm-3 gap-2 text-light fw-medium bg-primary py-sm-2 px-sm-3 py-1 px-2"
+                >
+                  <i class="fa-solid fa-plane"></i>
+                  <div>Chuyến bay</div>
+                </a>
+                <a
+                  href="#"
+                  class="border-start border-info d-flex align-items-center gap-sm-3 gap-2 text-light fw-medium bg-primary py-sm-2 px-sm-3 py-1 px-2"
+                >
+                  <i class="fa-solid fa-hotel"></i>
+                  <div>Khách sạn</div>
+                </a>
+                <a
+                  href="#"
+                  class="d-none d-sm-flex border-start border-info align-items-center gap-sm-3 gap-2 text-light fw-medium bg-primary py-sm-2 px-sm-3 py-1 px-2"
+                >
+                  <i class="fa-solid fa-car"></i>
+                  <div>Thuê xe</div>
+                </a>
               </div>
               <div
-                class="flex-1 d-flex justify-content-start w-100 align-items-end mt-md-0 mt-4"
+                class="bg-light border-bottom border-primary border-3 p-4 d-md-flex d-block gap-4 w-100"
               >
-                <button class="btn btn-warning text-light h-fit btn-search">
-                  <span>Tìm kiếm</span>
-                </button>
+                <div>
+                  <label for="" class="fw-bold text-secondary">Loại:</label>
+                  <div class="">
+                    <select class="form-control w-fit" name="" id="">
+                      <option value="">--Loại tour--</option>
+                      <option value="">Trong nước</option>
+                      <option value="">Ngoài nước</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="" class="fw-bold text-secondary">Điểm đi:</label>
+                  <div class="">
+                    <select class="form-control w-fit" name="" id="">
+                      <option value="">--Nơi khởi hành--</option>
+                      <option value="">Trong nước</option>
+                      <option value="">Ngoài nước</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="" class="fw-bold text-secondary">Điểm đến:</label>
+                  <div class="">
+                    <select class="form-control w-fit" name="" id="">
+                      <option value="">--Địa điểm đến--</option>
+                      <option value="">Trong nước</option>
+                      <option value="">Ngoài nước</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label for="" class="fw-bold text-secondary">Ngày đi:</label>
+                  <div class="">
+                    <input type="date" class="form-control w-fit" />
+                  </div>
+                </div>
+                <div
+                  class="flex-1 d-flex justify-content-start w-100 align-items-end mt-md-0 mt-4"
+                >
+                  <button class="btn btn-warning text-light h-fit btn-search">
+                    <span>Tìm kiếm</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- main -->
-    <main class="py-4">
       <!-- uu dai -->
       <section class="my-4">
         <div class="container">
@@ -430,7 +432,9 @@
                           Brussels chỉ cách điểm nóng Olympics một chuyến tàu
                           ngắn
                         </p>
-                        <a href="./collection.html" class="btn btn-primary w-fit"
+                        <a
+                          href="./collection.html"
+                          class="btn btn-primary w-fit"
                           >Khám phá ngay</a
                         >
                       </div>
@@ -456,7 +460,9 @@
                           Brussels chỉ cách điểm nóng Olympics một chuyến tàu
                           ngắn
                         </p>
-                        <a href="./collection.html" class="btn btn-primary w-fit"
+                        <a
+                          href="./collection.html"
+                          class="btn btn-primary w-fit"
                           >Khám phá ngay</a
                         >
                       </div>
@@ -482,7 +488,9 @@
                           Brussels chỉ cách điểm nóng Olympics một chuyến tàu
                           ngắn
                         </p>
-                        <a href="./collection.html" class="btn btn-primary w-fit"
+                        <a
+                          href="./collection.html"
+                          class="btn btn-primary w-fit"
                           >Khám phá ngay</a
                         >
                       </div>
@@ -508,7 +516,9 @@
                           Brussels chỉ cách điểm nóng Olympics một chuyến tàu
                           ngắn
                         </p>
-                        <a href="./collection.html" class="btn btn-primary w-fit"
+                        <a
+                          href="./collection.html"
+                          class="btn btn-primary w-fit"
                           >Khám phá ngay</a
                         >
                       </div>
@@ -562,9 +572,8 @@
                   <div class="card-body">
                     <span class="fs-7">27/6/2024 - 5 ngày</span>
                     <h5 class="card-title text-primary fw-bold mt-1 card-name">
-                      <a href="./detail.html"
-                      class="text-primary-1"  
-                      >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
+                      <a href="./detail.html" class="text-primary-1"
+                        >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
                         Show Alcazar và Buffet tại BaiYoke Sky)</a
                       >
                     </h5>
@@ -581,7 +590,9 @@
                       </div>
                     </div>
                     <div class="d-flex justify-content-between gap-2 my-2">
-                      <a href="./booking.html" class="btn btn-danger w-100">Đặt ngay</a>
+                      <a href="./booking.html" class="btn btn-danger w-100"
+                        >Đặt ngay</a
+                      >
                       <a href="./detail.html" class="btn btn-outline-primary"
                         >Xem chi tiết</a
                       >
@@ -614,9 +625,8 @@
                   <div class="card-body">
                     <span class="fs-7">27/6/2024 - 5 ngày</span>
                     <h5 class="card-title text-primary fw-bold mt-1 card-name">
-                      <a href="./detail.html"
-                      class="text-primary-1"  
-                      >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
+                      <a href="./detail.html" class="text-primary-1"
+                        >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
                         Show Alcazar và Buffet tại BaiYoke Sky)</a
                       >
                     </h5>
@@ -633,7 +643,9 @@
                       </div>
                     </div>
                     <div class="d-flex justify-content-between gap-2 my-2">
-                      <a href="./booking.html" class="btn btn-danger w-100">Đặt ngay</a>
+                      <a href="./booking.html" class="btn btn-danger w-100"
+                        >Đặt ngay</a
+                      >
                       <a href="./detail.html" class="btn btn-outline-primary"
                         >Xem chi tiết</a
                       >
@@ -666,9 +678,8 @@
                   <div class="card-body">
                     <span class="fs-7">27/6/2024 - 5 ngày</span>
                     <h5 class="card-title text-primary fw-bold mt-1 card-name">
-                      <a href="./detail.html"
-                      class="text-primary-1"  
-                      >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
+                      <a href="./detail.html" class="text-primary-1"
+                        >Thái Lan: Bangkok - Pattaya (Vườn lan Nong Nooch, tặng
                         Show Alcazar và Buffet tại BaiYoke Sky)</a
                       >
                     </h5>
@@ -685,7 +696,9 @@
                       </div>
                     </div>
                     <div class="d-flex justify-content-between gap-2 my-2">
-                      <a href="./booking.html" class="btn btn-danger w-100">Đặt ngay</a>
+                      <a href="./booking.html" class="btn btn-danger w-100"
+                        >Đặt ngay</a
+                      >
                       <a href="./detail.html" class="btn btn-outline-primary"
                         >Xem chi tiết</a
                       >
@@ -1029,7 +1042,7 @@
       <!-- tin tuc -->
       <section class="my-4">
         <div class="container">
-          <div class="d-flex justify-content-between align-items-center ">
+          <div class="d-flex justify-content-between align-items-center">
             <div class="fs-2 fw-bold text-primary">Tin tức</div>
             <div class="btn btn-outline-secondary">
               <span>Xem thêm</span>
@@ -1059,7 +1072,7 @@
                 </div>
                 <div class="col-7">
                   <div class="text-danger fw-bold">Tin tức du lịch</div>
-                  <a href="#" class="fw-bold my-3 card-name"
+                  <a href="./news.html" class="fw-bold my-3 card-name"
                     >Top 22 địa điểm du lịch Úc đặc biệt thôi thúc mọi tâm hồn
                     yêu xê dịch</a
                   >
@@ -1076,7 +1089,7 @@
                 </div>
                 <div class="col-7">
                   <div class="text-danger fw-bold">Tin tức du lịch</div>
-                  <a href="#" class="fw-bold my-3 card-name"
+                  <a href="./news.html" class="fw-bold my-3 card-name"
                     >Top 22 địa điểm du lịch Úc đặc biệt thôi thúc mọi tâm hồn
                     yêu xê dịch</a
                   >
@@ -1094,12 +1107,66 @@
                 </div>
                 <div class="col-7">
                   <div class="text-danger fw-bold">Tin tức du lịch</div>
-                  <a href="#" class="fw-bold my-3 card-name"
+                  <a href="./news.html" class="fw-bold my-3 card-name"
                     >Top 22 địa điểm du lịch Úc đặc biệt thôi thúc mọi tâm hồn
                     yêu xê dịch</a
                   >
                   <span class="text-gray fs-7">21/6/2024</span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- more -->
+
+      <section class="my-4 container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 ">
+            <div class="d-flex gap-3 bg-bg px-3 py-3 rounded-4 shadow align-items-center">
+              <div>
+                <img class="object-fit-cover" width="58" src="./assets/icons/sale.png" alt="" />
+              </div>
+              <div>
+                <div class="fw-bold fs-7 mb-1">GIÁ TỐT - NHIỀU ƯU ĐÃI</div>
+                <div class="text-gray fs-7" style="height: 42px;">Ưu đãi và qua tặng hấp dẫn khi mua tour online</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4 ">
+            <div class="d-flex gap-3 bg-bg px-3 py-3 rounded-4 shadow align-items-center">
+              <div>
+                <img class="object-fit-cover" width="58" src="./assets/icons/card.png" alt="" />
+              </div>
+              <div>
+                <div class="fw-bold fs-7 mb-1">THANH TOÁN AN TOÀN</div>
+                <div class="text-gray fs-7" style="height: 42px;">Được bảo mật bởi tổ chức quốc tế Global Sign</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4 ">
+            <div class="d-flex gap-3 bg-bg px-3 py-3 rounded-4 shadow align-items-center">
+              <div>
+                <img class="object-fit-cover" width="58" src="./assets/icons/service.png" alt="" />
+              </div>
+              <div>
+                <div class="fw-bold fs-7 mb-1">TƯ VẤN MIỄN PHÍ</div>
+                <div class="text-gray fs-7" style="height: 42px;">Hỗ trợ tư vấn online miễn phí</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4 ">
+            <div class="d-flex gap-3 bg-bg px-3 py-3 rounded-4 shadow align-items-center">
+              <div>
+                <img class="object-fit-cover" width="58" src="./assets/icons/brand.png" alt="" />
+              </div>
+              <div>
+                <div class="fw-bold fs-7 mb-1">THƯƠNG HIỆU UY TÍN</div>
+                <div class="text-gray fs-7" style="height: 42px;">Thương hiệu lữ hành hàng đầu Việt Nam</div>
               </div>
             </div>
           </div>
@@ -1195,16 +1262,14 @@
           </div>
         </div>
       </div>
-      <div class="text-center p-2 text-gray mt-5 border border-top">
+      <div class="text-center p-2 text-gray mt-5 border border-top bg-bg">
         Copyright © 2024 Mr Quynh
       </div>
     </footer>
     <!-- script -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-     
-    </script>
+    <script></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -1220,6 +1285,6 @@
     ></script>
 
     <!-- script -->
-     <script src="./src//js//main.js"></script>
+    <script src="./src//js//main.js"></script>
   </body>
 </html>

@@ -55,7 +55,6 @@ body {
 }
 a {
   text-decoration: none !important;
-  /* color: rgb(15, 15, 15) !important; */
 }
 *:hover {
   transition: 0.3s ease;
@@ -108,12 +107,12 @@ a {
 .bg-green-1 {
   background-color: #00a99d8f;
 }
-.p-0 {
+/* .p-0 {
   padding: 2px;
 }
 .flex-1 {
   flex: 1;
-}
+} */
 
 /* custom */
 .card-hover:hover {
@@ -121,9 +120,6 @@ a {
   transform: translateY(-3px);
 }
 .card-name {
-  /* line-height: 1.8rem; */
-  /* margin: 10px 10px 6px; */
-  /* height: 36px; */
   overflow: hidden;
   display: block;
   display: -webkit-box;

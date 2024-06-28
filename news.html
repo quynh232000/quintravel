@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:image" content="./assets/logo/logo-no-text.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/logo/logo-no-text.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quin - Travel</title>
+    <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- style css -->
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="bg-primary text-light position-fixed z-2 top-0 start-0 end-0"
+    >
+      <div class="container py-2">
+        <div class="row">
+          <a href="/" class="d-flex align-items-center col-4">
+            <img
+              width="84"
+              class="imge-fluid"
+              src="./assets/logo/logo-white.png"
+              alt=""
+            />
+            <!-- <div class="text-light pt-2 fw-bold px-2">Travel</div> -->
+          </a>
+
+          <nav
+            class="col-8 d-flex justify-content-end text-light nav-laptop d-none d-md-flex"
+          >
+            <a
+              href=""
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1"
+            >
+              <div class="fw-medium">VND</div>
+              <img
+                class="ms-2"
+                width="24"
+                src="./assets/icons//vietnam.png"
+                alt=""
+              />
+            </a>
+            <a
+              href=""
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1 d-flex align-items-center gap-2"
+            >
+              <div class="fw-medium">Liên hệ</div>
+              <i class="fa-regular fa-circle-question"></i>
+            </a>
+            <a
+              href=""
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1 me-2 d-flex align-items-center gap-2"
+            >
+              <div class="fw-medium">Tin tức</div>
+              <i class="fa-solid fa-satellite-dish"></i>
+            </a>
+            <div class="d-flex gap-2">
+              <a
+                href="register.html"
+                class="btn btn-outline-light btn-sm d-flex align-items-center text-primary fw-bolder rounded-2 bg-light"
+                >Đăng ký</a
+              >
+              <a
+                href="login.html"
+                class="btn btn-outline-light btn-sm d-flex align-items-center text-primary rounded-2 fw-bolder bg-light"
+                >Đăng nhập</a
+              >
+            </div>
+          </nav>
+          <nav
+            class="col-8 d-flex justify-content-end text-light nav-mobile hidden d-block d-md-none"
+          >
+            <div
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1 d-flex align-items-center gap-2"
+            >
+              <i class="fa-regular fa-circle-user fs-3"></i>
+            </div>
+            <div
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+              class="btn btn-outline-primary border-0 hover-bg-0 text-light d-flex hover-bg-hover-1 d-flex align-items-center gap-2"
+            >
+              <i class="fa-solid fa-bars fs-3"></i>
+            </div>
+          </nav>
+        </div>
+
+        <div class="row mt-md-0 mt-2">
+          <div class="col-12 text-white d-flex gap-2 justify-content-md-center">
+            <a
+              href="#"
+              class="border border-primary text-light fs-7 d-flex align-items-center gap-2 bg-hover-1 w-fit p-2 rounded-5 px-3"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Địa điểm tham quan</span>
+            </a>
+
+            <div class="d-none gap-2 d-md-flex">
+              <a
+                href="#"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-solid fa-plane"></i>
+                <span>Chuyến bay</span>
+              </a>
+
+              <a
+                href="#"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-solid fa-hotel"></i>
+                <span>Khách sạn</span>
+              </a>
+
+              <a
+                href="#"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-solid fa-car"></i>
+                <span>Thuê xe</span>
+              </a>
+
+              <a
+                href="#"
+                class="text-light fs-7 d-flex align-items-center gap-2 hover-bg-hover-1 w-fit p-2 rounded-5 px-3"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+                <span>Khuyến mãi</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header mobile start-->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Khác</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <label for="" class="fw-bold">Ngôn ngữ</label>
+          <div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+              <span>Tiếng việt</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="" class="fw-bold">Hộ trợ</label>
+          <div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <span>Liên hệ</span>
+            </div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-regular fa-circle-question"></i>
+              </div>
+              <span>Hỏi đáp</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="" class="fw-bold">Chức năng</label>
+          <div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-plane"></i>
+              </div>
+              <span>Chuyến bay</span>
+            </div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <span>Khách sạn</span>
+            </div>
+            <div class="d-flex gap-2 btn btn-outline-light text-dark">
+              <div>
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <span>Thuê xe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 border-top border-2 pt-4">
+          <button class="btn btn-primary w-100">Đăng nhập</button>
+          <button class="btn btn-outline-primary w-100 my-3">Đăng kí</button>
+        </div>
+      </div>
+    </div>
+    <!-- header mobile end-->
+
+    <!-- main -->
+    <main style="padding-top: 90px">
+      <div class="container pt-3">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Thành phố hải cảng yên bình Genova
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-12 col-lg-9">
+            <div>
+              <h2 class="text-primary-1 fw-bold">
+                Thành phố hải cảng yên bình Genova
+              </h2>
+
+              <div class="row py-2">
+                <div class="col-md-6 d-flex gap-4 align-items-center fs-7 text-gray">
+                  <div>
+                    By <span class="text-danger">Admin</span>
+                    <span> , 16/8/2024</span>
+                  </div>
+                  <div class="btn-sm btn-primary py-0">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>thích</span>
+                    <span>1</span>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex gap-4 fs-7 text-gray justify-content-end">
+                  <div class="text-danger">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div>
+                    <span class="fw-bold">5/5</span>
+                    trên <span class="fw-bold">1</span>
+                    đánh giá
+                  </div>
+                </div>
+              </div>
+
+              <div class="content d-flex flex-column gap-2">
+                  <img src="https://www.startravel.vn/upload/tintuc/small/_202461415241_2.webp" class="w-100" alt="">
+
+                  <p>
+                    Genova (Tiếng Ý là Genoa) là thủ phủ của tỉnh Genova và Liguria ở phía Tây Bắc nước Ý, là một thành phố quan trọng và giàu tính lịch sử. Genova được biết đến là cảng biển chính của Ý và cạnh tranh với cảng Marseilles (Pháp) để trở thành hải cảng dẫn đầu ở biển Địa Trung Hải.
+                  </p>
+
+                  <p>
+                    Genova (Tiếng Ý là Genoa) là thủ phủ của tỉnh Genova và Liguria ở phía Tây Bắc nước Ý, là một thành phố quan trọng và giàu tính lịch sử. Genova được biết đến là cảng biển chính của Ý và cạnh tranh với cảng Marseilles (Pháp) để trở thành hải cảng dẫn đầu ở biển Địa Trung Hải. Trong Thế chiến II, hải cảng Genova bị tàn phá nặng và cả một phần do các cơn bão xảy ra vào năm 1954 và 1955. Nhưng sau đó đã được tái lập và cải tiến để sử dụng cho tới hiện tại.Vậy thì, chúng ta sẽ thấy gì ở hải cảng Genova này đây?
+
+
+                  </p>
+                  <img src="https://www.startravel.vn/upload/genova/1.webp" class="img-fluid" alt="">
+                  <h4>Đôi nét về lịch sử của Genova, Ý. </h4>
+
+                  <span>
+                    Genova trước đây là một thành phố không được đánh giá cao, tuy nhiên, điều đó không còn nữa! Giờ đây, Genova, một thị trấn ở Ligures đã đạt được thành công to lớn dưới sự cai trị bởi các luật lệ thời La Mã. Thị trấn này trở thành một xã tự do vào khoảng thế kỷ thứ 10 và được quản lý bởi các quan lãnh sự. Trong thế kỷ 11, Genova (với sự hỗ trợ của Pisa) đã đánh đuổi người Ả Rập ra khỏi Corsica và tiến vào Sardinia. Sardinia trở thành tâm điểm của sự cạnh tranh dẫn đến cuộc chiến cuối cùng với Pisa. Genova giành chiến thắng trong trận hải chiến quyết định Meloria năm 1284.
+                  </span>
+
+                  <img src="https://www.startravel.vn/upload/genova/3.webp" class="img-fluid" alt="">
+
+                  <p>Trong các cuộc Thập tự chinh, sự giàu có và sức mạnh của Genova tiếp tục tăng trưởng mạnh mẽ. Từ Tây Ban Nha đến Crimea, Genova có thể mở rộng, giành được nhiều tài sản và đặc quyền giao dịch hơn. Vào năm 1408, một nhóm thương gia đang cung cấp một phần lớn quỹ phòng thủ và mở rộng quân sự của Genova đã thành lập Banco San Giorgio hùng mạnh. Theo thời gian, các chính sách của Genova đã xung khắc với kế hoạch của Venice liên quan đến Địa Trung Hải, dẫn đến chiến tranh giữa hai thành phố. Chiến tranh kết thúc vào năm 1381 với bộ hiệp ước The Peace of Turin. Năm 1339, một cuộc bầu cử được tổ chức để chọn ra vị tổng trấn đầu tiên, người giữ chức chánh án trọn đời.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="bg-bg p-3 rounded-2">
+              <div class="fw-bold fs-5 pb-2">Xem nhiều nhất</div>
+
+              <div class="d-flex gap-2 mb-2 ">
+                <div class="pt-1">
+                  <img src="https://www.startravel.vn/upload/tintuc/small/_201669165622_du-thuyen-ovation-of-the-seas-s.jpg" width="76" height="64" class="object-fit-cover" alt="">
+                </div>
+                <div class="fs-7 text-gray">
+                  Ovation of the Seas - Siêu du thuyền thông minh  nhất thế giới
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 mb-2">
+                <div class="pt-1">
+                  <img src="https://www.startravel.vn/upload/tintuc/small/_201669165622_du-thuyen-ovation-of-the-seas-s.jpg" width="76" height="64" class="object-fit-cover" alt="">
+                </div>
+                <div class="fs-7 text-gray">
+                  Ovation of the Seas - Siêu du thuyền thông minh  nhất thế giới
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 mb-2 ">
+                <div class="pt-1">
+                  <img src="https://www.startravel.vn/upload/tintuc/small/_201669165622_du-thuyen-ovation-of-the-seas-s.jpg" class="" width="76" height="64" class="object-fit-cover" alt="">
+                </div>
+                <div class="fs-7 text-gray">
+                  Ovation of the Seas - Siêu du thuyền thông minh  nhất thế giới
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 mb-2">
+                <div class="pt-1">
+                  <img src="https://www.startravel.vn/upload/tintuc/small/_201669165622_du-thuyen-ovation-of-the-seas-s.jpg" width="76" height="64" class="object-fit-cover" alt="">
+                </div>
+                <div class="fs-7 text-gray">
+                  Ovation of the Seas - Siêu du thuyền thông minh  nhất thế giới
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 mb-2 ">
+                <div class="pt-1">
+                  <img src="https://www.startravel.vn/upload/tintuc/small/_201669165622_du-thuyen-ovation-of-the-seas-s.jpg" width="76" height="64" class="object-fit-cover" alt="">
+                </div>
+                <div class="fs-7 text-gray">
+                  Ovation of the Seas - Siêu du thuyền thông minh  nhất thế giới
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 mb-2">
+                <div class="pt-1">
+                  <img src="https://www.startravel.vn/upload/tintuc/small/_201669165622_du-thuyen-ovation-of-the-seas-s.jpg" width="76" height="64" class="object-fit-cover" alt="">
+                </div>
+                <div class="fs-7 text-gray">
+                  Ovation of the Seas - Siêu du thuyền thông minh  nhất thế giới
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="mt-5 pt-5 border-top border-3 border-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="fw-bold text-primary fs-5">Thông tin liên hệ</div>
+            <div class="mt-4 text-gray">
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <i class="fa-solid fa-headset"></i>
+                <span class="fs-7">0358723520 / Liên hệ 24/7</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="fs-7">Cv.Quang Trung, Q.12, HCM</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="fs-7">quynh232000@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="fw-bold text-primary fs-5">
+              Chính sách của QuinTravel
+            </div>
+            <div class="mt-4 text-gray">
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Phương thức thanh toán</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Chính sách giao hàng</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Chính sách đổi trả</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Điều khoản mua bán</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="fw-bold text-primary fs-5">Về chúng tôi</div>
+            <div class="mt-4 text-gray">
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Câu chuyện của Quin</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Tin tức</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Tuyển dụng</span>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <span class="fs-7">Chương trình flash sale</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-sm-2">
+            <div class="fw-bold text-primary fs-5">Theo dõi</div>
+            <div class="mt-4 text-gray">
+              <a
+                href="https://facebook.com/quynh232000"
+                class="d-flex text-gray gap-2 align-items-center mb-2"
+              >
+                <i class="fa-brands fa-facebook"></i>
+                <span class="fs-7">QuinTravel</span>
+              </a>
+              <a
+                href="https://mr-quynh.com"
+                class="d-flex text-gray gap-2 align-items-center mb-2"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="fs-7">Tiktok: QuinTravel</span>
+              </a>
+              <a
+                href="https://mr-quynh.com"
+                class="d-flex text-gray gap-2 align-items-center mb-2"
+              >
+                <i class="fa-brands fa-youtube"></i>
+                <span class="fs-7">Youtube: QuinTravel</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-2 text-gray mt-5 border-top">
+        Copyright © 2024 Mr Quynh
+      </div>
+    </footer>
+    <!-- script -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
